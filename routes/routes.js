@@ -28,7 +28,7 @@ router.post('/images/upload', (req, res) => {
             return res.send(err);
         }
         console.log(req.file);
-        res.send('Imagen cargada!');
+        res.send({message : 'Imagen cargada!', file : req.file});
     });
 });
 
