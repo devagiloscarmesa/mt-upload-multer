@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "now:deploy": "now"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "uuid": "^3.4.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "vercel": "^20.1.2"
   }
 }
