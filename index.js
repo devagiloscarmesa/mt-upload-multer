@@ -23,6 +23,9 @@ app.use(multer({storage}).single('image'));
 // Routes
 app.use(require('./routes/routes'));
 
+
+app.use(express.static('public'));
+
 //Iniciamos el servidor
 app.listen(app.get('port'), () => {
     console.log(`Server on port ${app.get('port')}`);
